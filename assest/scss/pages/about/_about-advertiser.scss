@@ -1,0 +1,122 @@
+.advertiser {
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 100px 0;
+  overflow: hidden;
+  position: relative;
+  .boxed{
+    @media (max-width: 1280px) {
+      width: auto;
+    }
+  }
+  .advertiser-body {
+    background-color: var(--body);
+    width: 80%;
+    border-radius: 8px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 20px 40px;
+    @media (max-width: 1280px) {
+      width: 85%;
+    }
+    .left {
+      width: 50%;
+      .advertiser-content {
+        .head {
+          margin-top: 40px;
+          h2 {
+            text-transform: uppercase;
+            color: var(--new-color);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1px;
+            @media (max-width: 1280px) {
+              font-size: 14px;
+            }
+          }
+        }
+        .body {
+          .heading {
+            margin: 20px 0;
+            h1 {
+              color: var(--text);
+              font-size: 50px;
+              font-weight: 700;
+              width: 100%;
+              @media (max-width: 1280px) {
+                font-size: 40px;
+              }
+            }
+          }
+          .desc {
+            width: 100%;
+            margin: 20px 0;
+            p {
+              color: #777777;
+              font-size: 17px;
+              @media (max-width: 1280px) {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+        .foot {
+          display: flex;
+          .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 190px;
+            .abt-btn {
+              font-size: 17px;
+              text-transform: capitalize;
+            }
+          }
+          .button-2 {
+            width: 250px;
+            background-color: transparent;
+            border: 2px solid var(--text);
+            margin-left: 10px;
+            &:hover{
+                background-color: var(--text);
+                border: none;
+            }
+            &:hover .new-btn .abt-btn{
+                color: var(--body);
+            }
+            &:hover .new-btn i.bx{
+                color: var(--body);
+            }
+            .new-btn{
+                display: flex;
+                align-items: center;
+                i.bx{
+                    color: var(--text);
+                    font-size: 25px;
+                    font-weight: var(--bold);
+                    padding-right: 7px;
+                    padding-top: 7px;
+                }
+                .abt-btn {
+                    color: var(--text);
+                }
+            }
+          }
+        }
+      }
+    }
+    .right {
+      margin-right: -1000px;
+      position: absolute;
+      top: 24px;
+      left: 605px;
+      z-index: 99;
+      display: inline-block;
+      @media (max-width: 1280px) {
+       left: 495px;
+      }
+    }
+  }
+}

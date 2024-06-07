@@ -1,0 +1,49 @@
+.brand {
+  width: 100%;
+  background-color: var(--body);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  @media (max-width: screen-size(md)) {
+    height: 160px;
+  }
+  @media (max-width: screen-size(sm)) {
+    display: none;
+  }
+  .brand-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .image {
+      padding: 0 40px;
+      margin: 0 30px;
+      filter: brightness(100%) contrast(150%) saturate(0%) blur(0px)
+        hue-rotate(0deg);
+      opacity: 0.65;
+      transition: all 0.3s;
+      @media (max-width: screen-size(xl)) {
+        margin: 0;
+      }
+      @media (max-width: screen-size(md)) {
+        padding: 0 25px;
+      }
+      @media (max-width: screen-size(sm)) {
+        padding: 10px 40px;
+      }
+      &:hover {
+        filter: brightness(100%) contrast(100%) saturate(100%) blur(0px)
+          hue-rotate(0deg);
+        opacity: 1;
+      }
+      img {
+        width: 250px;
+        @media (max-width: screen-size(xxl)) {
+          width: 210px;
+        }
+        @media (max-width: screen-size(md)) {
+          width: 145px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.team {
+  background-color: var(--body);
+  width: 100%;
+  padding: 80px;
+  @media (max-width: screen-size(sm)) {
+    padding: 30px 70px;
+  }
+  .boxed {
+    @media (max-width: 425px) {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .section-head{
+      .title{
+        h1{
+          @media (max-width: screen-size(sm)) {
+            font-size: 30px;
+          }
+          @media (max-width: 375px) {
+            font-size: 25px;
+          }
+          @media (max-width: screen-size(xs)) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .team-body {
+      margin: 40px 20px;
+      @media (max-width: 425px) {
+        margin: 0;
+      }
+    }
+  }
+}

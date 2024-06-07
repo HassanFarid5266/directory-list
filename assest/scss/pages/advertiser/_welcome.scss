@@ -1,0 +1,103 @@
+.markting {
+  width: 100%;
+  margin: 20px 0;
+  .advertisment {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 60px 60px;
+    width: 80%;
+    height: 350px;
+    background-image: url("https://classiads.designinvento.net/classiads-test/wp-content/uploads/2022/11/header-banner-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: screen-size(xxl)) {
+      width: 80%;
+    }
+    @media (max-width: screen-size(xl)) {
+      width: 90%;
+    }
+    .content {
+      margin: 0;
+      padding-bottom: 30px;
+      .advertiser-welcome {
+        .head {
+          h2 {
+            color: #ffd640;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: capitalize;
+            letter-spacing: 1.2;
+            @media (max-width: screen-size(xl)) {
+              font-size: 19px;
+            }
+            @media (max-width: 375px) {
+              font-size: 17px;
+            }
+          }
+        }
+        .body {
+          margin: 20px 0;
+          .heading {
+            h2 {
+              color: var(--body);
+              font-size: 48px;
+              font-weight: 700;
+              letter-spacing: 2.2;
+              word-spacing: 2px;
+              @media (max-width: screen-size(xxl)) {
+                font-size: 36px;
+              }
+              @media (max-width: 1280px) {
+                font-size: 32px;
+              }
+              @media (max-width: screen-size(xl)) {
+                font-size: 24px;
+              }
+              @media (max-width: 375px) {
+                font-size: 17px;
+              }
+            }
+          }
+          .para {
+            margin: 20px 0;
+            p {
+              color: #777;
+              font-size: 15px;
+              @media (max-width: screen-size(sm)) {
+                width: 200px;
+              }
+            }
+          }
+        }
+        .foot {
+          margin-top: 30px;
+          .button {
+            width: 230px;
+            border: none;
+            justify-content: center;
+            @media (max-width: screen-size(md)) {
+              width: 200px;
+            } 
+            @media (max-width: screen-size(sm)) {
+              width: 180px;
+            }
+            &:hover{
+                background-color: var(--body);
+            }
+            &:hover .abt-btn{
+                color: var(--text);
+            }
+            .abt-btn{
+              text-transform: capitalize;
+              font-size: 15px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}

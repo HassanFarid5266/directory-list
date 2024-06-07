@@ -1,0 +1,30 @@
+.testimonial {
+  background-color: #f7f7f7;
+  padding: 80px;
+  width: 100%;
+  .section-head {
+    .title {
+      p {
+        text-transform: uppercase;
+        color: var(--new-color);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1px;
+        @media (max-width: screen-size(xl)) {
+          font-size: 14px;
+        }
+        @media (max-width: screen-size(md)) {
+          font-size: 13px;
+        }
+      }
+      h1 {
+        font-size: 45px;
+        font-weight: 700;
+        margin-top: 20px;
+        @media (max-width: screen-size(xl)) {
+         font-size: 35px;
+        }
+      }
+    }
+  }
+}
